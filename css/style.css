@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin:0;
+    font-family: Helvetica,sans-serif;
+}
+.clearfix:after{
+    content:'';
+    display: table;
+    width:100%;
+    clear:both;
+}
+.conteiner{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header__top{
+    padding: 40px  0px 50px 0px;
+    
+    
+}
+.image{
+    position: absolute;
+    margin-left:130px;
+}
+h1{
+    font-size: 54px;
+    color: #0197D9;
+    text-align: center;
+    margin: 0;
+    
+}
+.title{
+    font-size: 20px;
+    color: #0197D9;
+    text-align: center;
+    padding-top: 4px;
+}
+nav{
+    margin-top: 15px;
+}
+.menu{
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+    display: block;
+    border-top: 1px solid rgb(223, 208, 208);
+    border-bottom: 1px solid rgb(223, 208, 208);
+    padding: 15px;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 17px;
+}
+.menu a{
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu .glovna{
+    color:#eb1224;
+}
+.menu a:hover{
+    color:#eb1224;
+    transition: 0.4s;
+}
+.inf{
+    text-align: center;
+    margin-top: 20px;
+}
+.girl{
+    width: 1000px;
+}
+h2{
+    font-weight: normal;
+    text-align: center;
+}
+h3{
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.content{
+    height: 300px;
+}
+.center{
+margin-top: 50px;
+}
+.ok{
+    width: 55px;
+    height: 50px;
+}
+.first{
+    width: 190px;
+    float: left;
+    text-align: center;
+}
+.first h3{
+font-size: 16px;
+margin-bottom: 10px;
+}
+.first p{
+   color: #888888; 
+font-size: 14px;
+line-height: 1.3em;
+}
+
+.first:nth-child(3){
+    margin-right: 80px;
+}
+.first:nth-child(1){
+    margin-right: 80px;
+}
+.first:nth-child(2){
+    margin-right: 80px;
+}
+.site__bottom{
+    border-top: 2px solid rgb(223, 208, 208);
+    margin-bottom: 28px;
+    margin-top: 50px;
+    padding-top: 28px;
+    text-align: center;
+}
+@media screen and (max-width: 999px) {
+    .girl{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .image{
+        display:none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .girl{
+        width: 400px;
+    }
+}
+    @media screen and (max-width: 400px) {
+        .girl{
+            width: 100px;
+        }
+}
