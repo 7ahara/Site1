@@ -102,7 +102,6 @@ text-align: center;
     display: inline-block;
     max-width: 24%;
     text-align:center;
-    height: auto;
 }
 .first h3{
 font-size: 16px;
@@ -121,6 +120,7 @@ line-height: 1.3em;
     text-align: center;
 }
 
+
 @media screen and (max-width: 950px) {
     .image{
         display:none;
@@ -129,6 +129,11 @@ line-height: 1.3em;
 @media screen and (max-width: 950px) {
     .first{
         max-width: 43%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .first{
+        max-width: 100%;
     }
 }
 
