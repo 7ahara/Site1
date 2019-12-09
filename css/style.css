@@ -18,12 +18,12 @@ body{
 }
 .header__top{
     padding: 40px  0px 50px 0px;
-    
+    text-align: center;
     
 }
 .image{
-    position: absolute;
-    margin-left:130px;
+    float: left;
+    
 }
 h1{
     font-size: 54px;
@@ -88,7 +88,8 @@ p{
     margin: 0;
 }
 .content{
-    height: 300px;
+    height: auto;
+
 }
 .center{
 margin-top: 50px;
@@ -103,34 +104,27 @@ text-align: center;
     display: inline-block;
     max-width: 24%;
     text-align:center;
+    vertical-align: top;
 }
 .first h3{
-font-size: 16px;
+font-size: 18px;
 margin-bottom: 10px;
 }
 .first p{
    color: #888888; 
-font-size: 14px;
+font-size: 16px;
 line-height: 1.3em;
 }
-/*.site__bottom{
-    border-top: 2px solid rgb(223, 208, 208);
-    margin-bottom: 28px;
-    margin-top: 50px;
-    padding-top: 28px;
-    text-align: center;
-}*/
-footer{
+.site__bottom{
     max-width: 100%;
-    text-align: center;
-    height: auto;
-    margin:  0 auto;
-    padding:25px 0 25px 0;
     border-top: 2px solid rgb(223, 208, 208);
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
 }
-
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 600px) {
     .image{
         display:none;
     }
