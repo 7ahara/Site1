@@ -31,7 +31,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         <div class="conteiner">
         <div class="header__top">
             <div class="image">
-                <img src="img/galka.png" alt="galka" >
+                <img src="img/galka.png" alt="galka">
             </div>
             <h1>Будьте здоровы</h1>
             <div class="title">Ваша районная аптека</div>
@@ -51,7 +51,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                         <li>
                             <a href="#">Войти</a>
                             <a>/</a>
-                            <a href="php/index.php" class="glovna">Регистрация</a>
+                            <a href="index.php" class="glovna">Регистрация</a>
                         </li>
                     </ul>
                 </nav>
