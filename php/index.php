@@ -27,7 +27,37 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     }
 }
 ?>
-
+<header>
+        <div class="conteiner">
+        <div class="header__top">
+            <div class="image">
+                <img src="img/galka.png" alt="galka" >
+            </div>
+            <h1>Будьте здоровы</h1>
+            <div class="title">Ваша районная аптека</div>
+        </div>
+        <div class="header__content">
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                         <li>
+                             <a href="#">Продукция и услуги</a>
+                        </li>
+                        <li>
+                             <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Войти</a>
+                            <a>/</a>
+                            <a href="php/index.php" class="glovna">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+    </header>
     <div class="container">
         <form class="form-signin" method="POST">
              <h2>Registration</h2>
@@ -39,5 +69,10 @@ if(isset($_POST['username']) && isset($_POST['password'])){
              <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
         </form>
     </div>
+    <footer>
+        <div class="site__bottom">
+            <div class="text">Наш email: Аптека@gmail.com | Наш телефон: +380505556570</div>    
+        </div>
+    </footer>
 </body>
 </html>

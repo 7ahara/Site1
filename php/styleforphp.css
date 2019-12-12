@@ -1,3 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin:0;
+    font-family: Helvetica,sans-serif;
+}
+.conteiner{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header__top{
+    padding: 40px  0px 50px 0px;
+    text-align: center;
+    
+}
+.image{
+    float: left;
+    
+}
+h1{
+    font-size: 54px;
+    color: #0197D9;
+    text-align: center;
+    margin: 0;
+    
+}
+.title{
+    font-size: 20px;
+    color: #0197D9;
+    text-align: center;
+    padding-top: 4px;
+}
+nav{
+    margin-top: 15px;
+}
+.menu{
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+    display: block;
+    border-top: 1px solid rgb(223, 208, 208);
+    border-bottom: 1px solid rgb(223, 208, 208);
+    padding: 15px;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 17px;
+}
+.menu a{
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu .glovna{
+    color:#eb1224;
+}
+.menu a:hover{
+    color:#eb1224;
+    transition: 0.4s;
+}
+.site__bottom{
+    max-width: 100%;
+    border-top: 2px solid rgb(223, 208, 208);
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+}
 .form-signin{
     max-width: 400px;
     padding: 15px;
