@@ -40,7 +40,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                 <nav>
                     <ul class="menu">
                         <li>
-                            <a href="../domains/Site1/index.html">Главная</a>
+                            <a href="../index.html">Главная</a>
                         </li>
                          <li>
                              <a href="#">Продукция и услуги</a>
