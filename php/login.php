@@ -72,10 +72,46 @@
              <a href="index.php"class="btn btn-lg btn-primary btn-block">Registration</a>
              <?php if (isset($_SESSION['username'])){
             $username = $_SESSION['username'];
-            echo "<a href='logout.php' class='btn btn-lg btn-primary btn-block' > Logout </a>";
+            echo "Вы вошли как " . $username . " ";
+            echo "<a href='logout.php' class='btn btn-lg btn-primary' > Logout </a>";
         }
         ?>
         </form>
+    </div>
+    <div class="conteiner">
+    <h4>Хочешь порисовать?(смотри вниз)</h4>
+    <canvas id = "canvas"  class="formochka">Обновите браузер</canvas>
+		<script>
+			var 
+			  canv =  document.getElementById('canvas'),
+			  ctx = canv.getContext('2d');
+
+			  canv.width = window.innerWidth;
+			  canv.height = window.innerHeight;
+
+			  canv.addEventListener('mousedown',function(){
+				  isMouseDown = true;
+			  });
+			  
+			  canv.addEventListener('mouseup',function(){
+				  isMouseDown = false;
+				  ctx.beginPath();
+			  });
+			  ctx.lineWidth = 4 * 2;
+			  canv.addEventListener('mousemove',function(e){
+				  if (isMouseDown){
+					  ctx.lineTo(e.clientX, e.clientY);
+					  ctx.stroke();
+
+					  ctx.beginPath();
+					  ctx.arc(e.clientX, e.clientY, 4,0, Math.PI * 2)
+					  ctx.fill();
+
+					  ctx.beginPath();
+					  ctx.moveTo(e.clientX, e.clientY);
+				  }
+			  });
+        </script>
     </div>
     <footer>
         <div class="site__bottom">
