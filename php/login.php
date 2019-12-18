@@ -12,6 +12,7 @@
 
             if($count == 1){
                 $_SESSION['username'] = $username;
+                $smsg = "Все прошло успешно";
             } else{
                 $fsmsg = "К сожилению данного пользователя не существует";
             }
@@ -25,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../php/styleforphp.css">
+    <link rel="stylesheet" href="../css/styleforphp.css">
     <title>Document</title>  
 </head>
 <body>
@@ -33,7 +34,7 @@
         <div class="conteiner">
         <div class="header__top">
             <div class="image">
-                <img src="img/galka.png" alt="galka">
+                <img src="../img/galka.png" alt="galka">
             </div>
             <h1>Будьте здоровы</h1>
             <div class="title">Ваша районная аптека</div>
@@ -63,6 +64,7 @@
     <div class="container">
         <form class="form-signin" method="POST">
              <h2>Login</h2>
+             <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"><?php echo $smsg; ?> </div><?php }?>
              <?php if(isset($fsmsg)){ ?><div class="alert alert-danger" role="alert"><?php echo $fsmsg; ?> </div><?php }?>
              <input type="text" name="username" class="form-control" placeholder="Username" required>
              <input type="password" name="password" class="form-control" placeholder="Password" required>
@@ -70,9 +72,7 @@
              <a href="index.php"class="btn btn-lg btn-primary btn-block">Registration</a>
              <?php if (isset($_SESSION['username'])){
             $username = $_SESSION['username'];
-            echo "Hello " . $username . "";
-            echo " Вы вошли";
-            echo "<a href='logout.php' class='btn btn-lg btn-primary' > Logout </a>";
+            echo "<a href='logout.php' class='btn btn-lg btn-primary btn-block' > Logout </a>";
         }
         ?>
         </form>
