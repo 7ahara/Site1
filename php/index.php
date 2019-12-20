@@ -33,7 +33,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
             <div class="image">
                 <img src="../img/galka.png" alt="galka">
             </div>
-            <h1>Будьте здоровы</h1>
+            <h1 class="titl">Будьте здоровы</h1>
             <div class="title">Ваша районная аптека</div>
         </div>
         <div class="header__content">

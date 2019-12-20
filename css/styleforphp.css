@@ -27,11 +27,12 @@ body{
     float: left;
     
 }
-h1{
+.titl{
     font-size: 54px;
     color: #0197D9;
     text-align: center;
     margin: 0;
+    font-weight: bold;
 }
 .title{
     font-size: 20px;
