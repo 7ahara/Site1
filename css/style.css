@@ -175,7 +175,7 @@ line-height: 1.3em;
 }
 @media screen and (max-width: 750px) {
     .first{
-        max-width: 100%;
+        max-width: 90%;
     }
 }
 
