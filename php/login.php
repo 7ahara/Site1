@@ -79,7 +79,7 @@
         </form>
     </div>
     <div class="conteiner">
-    <h4><a href="../canv.html">Хочешь порисовать?</a></h4>
+    <h4><a href="../canv.html" class="paint">Хочешь порисовать?</a></h4>
     </div>
     <footer>
         <div class="site__bottom">

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="../css/styleforphp.css">
+
+<title>Document</title>  
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+        <div class="header__top">
+            <div class="image">
+                <a href="php/index.php"><img src="img/galka.png" alt="galka" ></a>
+            </div>
+            <h1>Будьте здоровы</h1>
+            <div class="title">Ваша районная аптека</div>
+        </div>
+        <div class="header__content">
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="glovna">Главная</a>
+                        </li>
+                         <li>
+                             <a href="local.html">Продукция и услуги</a>
+                        </li>
+                        <li>
+                             <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="php/login.php">Войти</a>
+                            <a>/</a>
+                            <a href="php/index.php">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+    </header>
+    <div class="container">
+    <div class="conteiner">
+     <div class="buttons">
+    <button id="darkgray" >Darkgray</button>
+    <button id="Darksalmon">Darksalmon</button>
+    <button id="Darkseagreen">Darkseagreen</button>
+    <button id="Dimgray">Dimgray</button>
+    <button id="Palegoldenrod">Palegoldenrod</button>
+        </div>
+    </div>   
+    </div>
+    <footer>
+        <div class="site__bottom">
+            <div class="text">Наш email: Аптека@gmail.com | Наш телефон: +380505556570</div>    
+        </div>
+    </footer>
+    <script>window.onload = function(){
+        if (localStorage.getItem('bgcolor')!==null){
+        var color = localStorage.getItem('bgcolor');
+        document.getElementsByTagName('body')[0].style.background = color;
+        }
+    
+        document.getElementById('darkgray').onclick = function(){
+            console.log('work');
+            document.getElementsByTagName('body')[0].style.background = 'darkgray';
+            localStorage.setItem('bgcolor','darkgray');
+        }
+    
+        document.getElementById('Darksalmon').onclick = function(){
+            console.log('work');
+            document.getElementsByTagName('body')[0].style.background = 'Darksalmon';
+            localStorage.setItem('bgcolor','Darksalmon');
+        }
+        
+        document.getElementById('Darkseagreen').onclick = function(){
+            console.log('work');
+            document.getElementsByTagName('body')[0].style.background = 'Darkseagreen';
+            localStorage.setItem('bgcolor','Darkseagreen');
+        }
+
+        document.getElementById('Dimgray').onclick = function(){
+            console.log('work');
+            document.getElementsByTagName('body')[0].style.background = 'Dimgray';
+            localStorage.setItem('bgcolor','Dimgray');
+        }
+
+        document.getElementById('Palegoldenrod').onclick = function(){
+            console.log('work');
+            document.getElementsByTagName('body')[0].style.background = 'Palegoldenrod';
+            localStorage.setItem('bgcolor','Palegoldenrod');
+        }
+    }</script>
+</body>
+</html>
